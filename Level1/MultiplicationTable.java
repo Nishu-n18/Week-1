@@ -1,18 +1,21 @@
+
 import java.util.*;
 
 public class MultiplicationTable {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
 
-        // Input the number from the user
-        System.out.print("Enter a number to generate its multiplication table: ");
-        int number = sc.nextInt();
-
-        // Generate and print the multiplication table from 6 to 9
-        for (int i = 6; i <= 9; i++) {
-            System.out.println(number + " * " + i + " = " + (number * i));
+        int Array[] = new int[11];
+        // store value in an array
+        for (int i = 1; i <= 10; i++) {
+            Array[i] = number * i;
         }
+        //Result from array
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + Array[i]);
 
+        }
     }
 }
