@@ -9,7 +9,7 @@ public class Fizzbuzz {
         int number = input.nextInt();
         String array[] = new String[number + 1];
         for (int i = 0; i <= number; i++) {
-            array[i] = "i";
+            array[i] = input.nextInt();
 
         }
 
