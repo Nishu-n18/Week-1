@@ -21,6 +21,10 @@ public class NumberCheck {
                 } else {
                     System.out.println("The " + number[i] + " is Positive Odd Number");
                 }
+            }else if(number[i]==0){
+                System.out.println("The " + number[i] + "zero");
+            }else{
+                System.out.println("The " + number[i] + " negative number");
             }
 
         }
